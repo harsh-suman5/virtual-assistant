@@ -180,6 +180,12 @@ recognition.onresult = function (event) {
         speak("processing, please wait", isHindi);
         window.open("whatsapp://")
     } 
+       else if (transcript.includes("whatsapp")) {
+    speak("Processing, please wait", isHindi);
+    window.open("whatsapp://send"); 
+}
+
+
    
     else if (transcript.includes("instagram")) {
         speak("opening your favourate insta", isHindi);
