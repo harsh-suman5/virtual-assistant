@@ -60,7 +60,7 @@ recognition.onresult = function (event) {
        
     }
         else if(transcript.includes("who is prime minister of india")) {
-            speak(" shree narendra modi", isHindi);
+            speak("shree narendra modi", isHindi);
         }
     
     else if(transcript.includes("hello ai")) {
