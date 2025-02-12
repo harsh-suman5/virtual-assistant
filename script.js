@@ -59,6 +59,9 @@ recognition.onresult = function (event) {
         speak("sorry sir, but i only understand hindi. can't talk in it", isHindi);
        
     }
+        else if(transcript.includes("who is prime minister of india")) {
+            speak(" shree narendra modi", isHindi);
+        }
     
     else if(transcript.includes("hello ai")) {
         speak("hello sir. I am  the virtual a i that will help you in many works", isHindi);
