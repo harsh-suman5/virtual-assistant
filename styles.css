@@ -9,20 +9,24 @@ body {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Image scales with the container */
+    max-width: 400px; /* Limits size on larger screens */
+    height: auto; /* Maintains aspect ratio */
     display: block;
     margin: 0 auto;
+    border-radius: 10px; /* Optional: adds smooth rounded edges */
 }
 
-/* For larger screens like PC/Laptop */
+/* Media query for larger screens (laptop/PC) */
 @media (min-width: 768px) {
+    .container {
+        max-width: 800px; /* Allow larger width */
+    }
+
     img {
-        width: 500px; /* Adjust width for bigger screens */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 500px; /* Slightly bigger image on desktops */
     }
 }
-
 
   
 }
