@@ -9,7 +9,9 @@ body {
 }
 
 img{
-    height: 50px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
    size: 0cm;
 }
 .container {
