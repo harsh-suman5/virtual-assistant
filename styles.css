@@ -8,13 +8,21 @@ body {
     margin: 0;
 }
 
-img{
-    img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
+
+/* For larger screens like PC/Laptop */
+@media (min-width: 768px) {
+    img {
+        width: 500px; /* Adjust width for bigger screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 
   
 }
